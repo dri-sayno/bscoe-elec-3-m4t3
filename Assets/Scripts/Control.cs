@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
-
+using UnityEngine.SceneManagement;
 
 
 public class Control : MonoBehaviour
@@ -10,7 +10,7 @@ public class Control : MonoBehaviour
 
     Vector3 tempPos, tempRot;
     [SerializeField] float speed = 10f;
-    [SerializeField] float zed = 3.72f;
+    //[SerializeField] float zed = 3.72f;
     [SerializeField] public float xMin = -5;
     [SerializeField] public float xMax = 5f;
     [SerializeField] public float yMin = -5f;
@@ -20,11 +20,13 @@ public class Control : MonoBehaviour
     [SerializeField] public float xRotation = 0.0F;
     float xThrow, yThrow;
 
+    [SerializeField] ParticleSystem fx;
+    [SerializeField] float dTime;
 
     // Use this for initialization
     void Start()
     {
-
+        
     }
 
     void smoothRotateX()
@@ -105,5 +107,16 @@ public class Control : MonoBehaviour
         //apply movement
         transform.localPosition = tempPos;
 
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        fx.Play();
+        Invoke("NewScene", dTime);
+    }
+
+    void NewScene()
+    {
+        SceneManager.LoadScene(0);
     }
 }
