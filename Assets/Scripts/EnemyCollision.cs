@@ -1,11 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EnemyCollision : MonoBehaviour {
 
     [SerializeField] ParticleSystem fx;
-    [SerializeField] GameObject missilee;
+    [SerializeField] GameObject missile;
     [SerializeField] float dTime;
 
 
@@ -15,8 +16,9 @@ public class EnemyCollision : MonoBehaviour {
         Destroy(gameObject, dTime);
     }
 
-    void OnTriggerEnter(Collider missilee)
+    void OnTriggerEnter(Collider missile)
     {
+        //SceneManager.LoadScene(0);
         Explosion();
     }
 

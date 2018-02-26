@@ -20,9 +20,6 @@ public class Control : MonoBehaviour
     [SerializeField] public float xRotation = 0.0F;
     float xThrow, yThrow;
 
-    [SerializeField] ParticleSystem fx;
-    [SerializeField] float dTime;
-
     // Use this for initialization
     void Start()
     {
@@ -56,12 +53,6 @@ public class Control : MonoBehaviour
         /*   INPUT   */
         xThrow = CrossPlatformInputManager.GetAxis("Horizontal");
         yThrow = CrossPlatformInputManager.GetAxis("Vertical");
-
-        //print(xThrow);
-        //print(yThrow);
-        //print("X: "+tempPos.x);
-
-        //print("Y: "+tempPos.y);
 
         /*  MOVEMENT FOR UP AND DOWN  */
         tempPos.x += xThrow * speed * Time.deltaTime;
@@ -109,14 +100,4 @@ public class Control : MonoBehaviour
 
     }
 
-    void OnTriggerEnter(Collider other)
-    {
-        fx.Play();
-        Invoke("NewScene", dTime);
-    }
-
-    void NewScene()
-    {
-        SceneManager.LoadScene(0);
-    }
 }
