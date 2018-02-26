@@ -1386,7 +1386,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1424650949644760, guid: 571ea75721d2aa04fae67e4d0b6bdf91, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 571ea75721d2aa04fae67e4d0b6bdf91, type: 2}
@@ -2913,7 +2913,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 466684174}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dd266692bf71f604b97704b5691255ab, type: 3}
   m_Name: 
@@ -14271,7 +14271,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1424650949644760, guid: 571ea75721d2aa04fae67e4d0b6bdf91, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 571ea75721d2aa04fae67e4d0b6bdf91, type: 2}
@@ -18699,7 +18699,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1422164369}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dd266692bf71f604b97704b5691255ab, type: 3}
   m_Name: 
