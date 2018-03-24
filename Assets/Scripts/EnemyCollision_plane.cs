@@ -18,7 +18,10 @@ public class EnemyCollision_plane : MonoBehaviour {
         if (hitpoints == 0)
         {
             fx.Play();
-            explode.Play();
+            if (gameObject.activeSelf)
+            {
+                explode.Play();
+            }
             Destroy(gameObject, dTime);
             Score.score = Score.score + 2;
         }

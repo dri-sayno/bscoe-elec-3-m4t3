@@ -21,7 +21,7 @@ public class Player_Collider : MonoBehaviour
     void OnTriggerEnter(Collider collision)
     {
         Debug.Log(collision.gameObject.name);
-        healthbar.fillAmount = healthbar.fillAmount - 0.10f;
+        healthbar.fillAmount = healthbar.fillAmount - 0.05f;
         hitpoints--;
         Explosion();
     }
