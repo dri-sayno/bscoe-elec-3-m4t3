@@ -1065,7 +1065,7 @@ MonoBehaviour:
   m_Rotation: {x: 0.15583922, y: 0.9839299, z: -0.08608275, w: 0.013634171}
   m_UseTrackMatchFields: 0
   m_MatchTargetFields: 63
-  m_RemoveStartOffset: 1
+  m_RemoveStartOffset: 0
 --- !u!114 &114339307937228226
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1082,7 +1082,7 @@ MonoBehaviour:
   m_Rotation: {x: 0.12140553, y: 0.98876923, z: -0.08650614, w: 0.010621613}
   m_UseTrackMatchFields: 0
   m_MatchTargetFields: 63
-  m_RemoveStartOffset: 1
+  m_RemoveStartOffset: 0
 --- !u!114 &114498746002266044
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1099,7 +1099,7 @@ MonoBehaviour:
   m_Rotation: {x: 0.17280897, y: 0.9468745, z: -0.042815384, w: 0.26782942}
   m_UseTrackMatchFields: 0
   m_MatchTargetFields: 63
-  m_RemoveStartOffset: 1
+  m_RemoveStartOffset: 0
 --- !u!114 &114619834314181710
 MonoBehaviour:
   m_ObjectHideFlags: 1
